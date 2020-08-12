@@ -75,6 +75,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: SMN-DEV-ECS-SRV
-        cluster: SMN-DEV-CLUSTER
+        service: ECS-TEST-SERVICE
+        cluster: ECS-TEST-CLUSTER
         wait-for-service-stability: true
